@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.github.paulgit.alfredipinfo</string>
+	<key>category</key>
+	<string>Internet</string>
+	<key>connections</key>
+	<dict>
+		<key>431C45F3-D0D0-4E98-A914-ECD6F6A0FB87</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0B87DA24-364C-466B-8276-C262B3C5A852</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>4DE38804-DD3A-4619-B68A-D9290EC54602</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>486CA29F-D5A5-4FA1-A024-C6CBF1647D00</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Paul Git</string>
+	<key>description</key>
+	<string>Lookup IP address information</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>IP Info</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>486CA29F-D5A5-4FA1-A024-C6CBF1647D00</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>keyword</key>
+				<string>myip</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>2</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Gathering your IP address information</string>
+				<key>script</key>
+				<string>if [[ $(uname -m) == 'arm64' ]]; then
+	JQ=bin/gojq_arm64
+else
+	JQ=bin/gojq_amd64
+fi
+
+IPINFO=$(curl -s -u $APIKEY: https://ipinfo.io)
+EXTERNALIP=$(echo $IPINFO | $JQ -r .ip) 
+CITY=$(echo $IPINFO | $JQ -r .city)
+REGION=$(echo $IPINFO | $JQ -r .region)
+COUNTRY=$(echo $IPINFO | $JQ -r .country)
+ICON="flags/${COUNTRY}_64.png"
+cat&lt;&lt;EOB
+{"items": [
+	{
+		"uid": "externalio",
+		"type": "text",
+		"title": "$EXTERNALIP ($CITY, $REGION, $COUNTRY)",
+		"subtitle": "",
+		"arg": "$EXTERNALIP",
+		"autocomplete": "",
+		"icon": {
+			"path": "$ICON"
+		}
+	}
+]}
+EOB</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Lookup your IP address infomration</string>
+				<key>title</key>
+				<string>Lookup your IP address information</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>4DE38804-DD3A-4619-B68A-D9290EC54602</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>0B87DA24-364C-466B-8276-C262B3C5A852</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>keyword</key>
+				<string>ipinfo</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Gathering IP address information</string>
+				<key>script</key>
+				<string>if [[ $(uname -m) == 'arm64' ]]; then
+	JQ=bin/gojq_arm64
+else
+	JQ=bin/gojq_amd64
+fi
+
+IPINFO=$(curl -s -u $APIKEY: https://ipinfo.io/{query})
+EXTERNALIP=$(echo $IPINFO | $JQ -r .ip) 
+CITY=$(echo $IPINFO | $JQ -r .city)
+REGION=$(echo $IPINFO | $JQ -r .region)
+COUNTRY=$(echo $IPINFO | $JQ -r .country)
+ICON="flags/${COUNTRY}_64.png"
+cat&lt;&lt;EOB
+{"items": [
+	{
+		"uid": "externalio",
+		"type": "text",
+		"title": "$EXTERNALIP ($CITY, $REGION, $COUNTRY)",
+		"subtitle": "",
+		"arg": "$EXTERNALIP ($CITY, $REGION, $COUNTRY)",
+		"autocomplete": "",
+		"icon": {
+			"path": "$ICON"
+		}
+	}
+]}
+EOB</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Lookup IP address information</string>
+				<key>title</key>
+				<string>Lookup IP address information</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>431C45F3-D0D0-4E98-A914-ECD6F6A0FB87</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>This site or product includes IP2Location™ Country Flags which available from https://www.ip2location.com.</string>
+	<key>uidata</key>
+	<dict>
+		<key>0B87DA24-364C-466B-8276-C262B3C5A852</key>
+		<dict>
+			<key>xpos</key>
+			<integer>190</integer>
+			<key>ypos</key>
+			<integer>150</integer>
+		</dict>
+		<key>431C45F3-D0D0-4E98-A914-ECD6F6A0FB87</key>
+		<dict>
+			<key>xpos</key>
+			<integer>10</integer>
+			<key>ypos</key>
+			<integer>150</integer>
+		</dict>
+		<key>486CA29F-D5A5-4FA1-A024-C6CBF1647D00</key>
+		<dict>
+			<key>xpos</key>
+			<integer>190</integer>
+			<key>ypos</key>
+			<integer>25</integer>
+		</dict>
+		<key>4DE38804-DD3A-4619-B68A-D9290EC54602</key>
+		<dict>
+			<key>xpos</key>
+			<integer>10</integer>
+			<key>ypos</key>
+			<integer>25</integer>
+		</dict>
+	</dict>
+	<key>variables</key>
+	<dict>
+		<key>APIKEY</key>
+		<string></string>
+	</dict>
+	<key>variablesdontexport</key>
+	<array>
+		<string>APIKEY</string>
+	</array>
+	<key>version</key>
+	<string>1.0</string>
+	<key>webaddress</key>
+	<string>https://github.com/paulgit/alfred-ipinfo</string>
+</dict>
+</plist>
