@@ -107,12 +107,12 @@ ICON="flags/${COUNTRY}_64.png"
 cat&lt;&lt;EOB
 {"items": [
 	{
-		"uid": "externalio",
+		"uid": "externalip",
 		"type": "text",
-		"title": "$EXTERNALIP ($CITY, $REGION, $COUNTRY)",
-		"subtitle": "",
+		"title": "$EXTERNALIP",
+		"subtitle": "$CITY, $REGION, $COUNTRY",
 		"arg": "$EXTERNALIP",
-		"autocomplete": "",
+		"autocomplete": "myip",
 		"icon": {
 			"path": "$ICON"
 		}
@@ -136,25 +136,6 @@ EOB</string>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>4DE38804-DD3A-4619-B68A-D9290EC54602</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>0B87DA24-364C-466B-8276-C262B3C5A852</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -201,12 +182,12 @@ ICON="flags/${COUNTRY}_64.png"
 cat&lt;&lt;EOB
 {"items": [
 	{
-		"uid": "externalio",
+		"uid": "ipinfo",
 		"type": "text",
-		"title": "$EXTERNALIP ($CITY, $REGION, $COUNTRY)",
-		"subtitle": "",
+		"title": "$EXTERNALIP",
+		"subtitle": "$CITY, $REGION, $COUNTRY",
 		"arg": "$EXTERNALIP ($CITY, $REGION, $COUNTRY)",
-		"autocomplete": "",
+		"autocomplete": "ipinfo",
 		"icon": {
 			"path": "$ICON"
 		}
@@ -230,6 +211,25 @@ EOB</string>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>431C45F3-D0D0-4E98-A914-ECD6F6A0FB87</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>0B87DA24-364C-466B-8276-C262B3C5A852</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
