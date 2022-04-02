@@ -36,7 +36,7 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>Paul Git</string>
+	<string>Paul Git (@paulgit)</string>
 	<key>description</key>
 	<string>Lookup IP address information</string>
 	<key>disabled</key>
