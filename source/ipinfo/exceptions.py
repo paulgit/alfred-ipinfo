@@ -19,16 +19,6 @@ class ConfigError(IPInfoError):
     """
     pass
 
-
-class QueryError(IPInfoError):
-    """Raised when invalid query were given
-
-    Extends:
-        IPInfoError
-    """
-    pass
-
-
 class ApiTokenError(IPInfoError):
     """Raised when App Token can not be used
 
