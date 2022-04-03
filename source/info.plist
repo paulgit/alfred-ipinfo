@@ -8,11 +8,11 @@
 	<string>Internet</string>
 	<key>connections</key>
 	<dict>
-		<key>431C45F3-D0D0-4E98-A914-ECD6F6A0FB87</key>
+		<key>16B3F428-D0D9-45DB-833D-9A5B709EC3B3</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>0B87DA24-364C-466B-8276-C262B3C5A852</string>
+				<string>D1E9334D-A9DF-472A-9F0C-778FA94CB9D0</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -21,11 +21,113 @@
 				<false/>
 			</dict>
 		</array>
-		<key>4DE38804-DD3A-4619-B68A-D9290EC54602</key>
+		<key>2B8BAD2F-12C5-433D-9475-DD53165DCC04</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>486CA29F-D5A5-4FA1-A024-C6CBF1647D00</string>
+				<string>C8C410D5-CB94-46C4-9998-8B1A644A86F2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>431C45F3-D0D0-4E98-A914-ECD6F6A0FB87</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D1E9334D-A9DF-472A-9F0C-778FA94CB9D0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>54901FDD-C4F5-4671-97CD-7A6F8D06BD72</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>16B3F428-D0D9-45DB-833D-9A5B709EC3B3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C8C410D5-CB94-46C4-9998-8B1A644A86F2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CCB9FCA1-8490-4BA8-91F6-8B2DCF60BE17</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C991287B-0F95-4196-B6C7-C20B31E3CC11</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B7C68382-DB51-47C1-9579-573796A9030C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>E321582E-0B25-4EE1-A3F5-155AB13C2188</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>557EEBD1-608E-4869-BEEB-98B84EE9AF0C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>CCB9FCA1-8490-4BA8-91F6-8B2DCF60BE17</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B7C68382-DB51-47C1-9579-573796A9030C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>E321582E-0B25-4EE1-A3F5-155AB13C2188</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>E8CB6FDB-42CE-436F-A642-6394C9670082</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D1E9334D-A9DF-472A-9F0C-778FA94CB9D0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C991287B-0F95-4196-B6C7-C20B31E3CC11</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -48,85 +150,65 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>486CA29F-D5A5-4FA1-A024-C6CBF1647D00</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
 				<key>argumenttreatemptyqueryasnil</key>
-				<false/>
+				<true/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>escaping</key>
-				<integer>63</integer>
+				<integer>102</integer>
 				<key>keyword</key>
-				<string>myip</string>
+				<string>ipinfo</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
-				<false/>
+				<true/>
 				<key>queuedelaymode</key>
-				<integer>2</integer>
+				<integer>0</integer>
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>Gathering your IP address information</string>
+				<string>Fetching your IP address information</string>
 				<key>script</key>
-				<string>if [[ $(uname -m) == 'arm64' ]]; then
-	JQ=bin/gojq_arm64
+				<string>UNAME_MACHINE=&quot;$(/usr/bin/uname -m)&quot;
+if [[ &quot;${UNAME_MACHINE}&quot; == &quot;arm64&quot; ]]
+then
+  HOMEBREW_PREFIX=&quot;/opt/homebrew&quot;
 else
-	JQ=bin/gojq_amd64
+  HOMEBREW_PREFIX=&quot;/usr/local&quot;
 fi
 
-IPINFO=$(curl -s -u $APIKEY: https://ipinfo.io)
-EXTERNALIP=$(echo $IPINFO | $JQ -r .ip) 
-CITY=$(echo $IPINFO | $JQ -r .city)
-REGION=$(echo $IPINFO | $JQ -r .region)
-COUNTRY=$(echo $IPINFO | $JQ -r .country)
-ICON="flags/${COUNTRY}_64.png"
-cat&lt;&lt;EOB
-{"items": [
-	{
-		"uid": "externalip",
-		"type": "text",
-		"title": "$EXTERNALIP",
-		"subtitle": "$CITY, $REGION, $COUNTRY",
-		"arg": "$EXTERNALIP",
-		"autocomplete": "myip",
-		"icon": {
-			"path": "$ICON"
-		}
-	}
-]}
-EOB</string>
+if command -v &quot;$HOMEBREW_PREFIX/bin/python3&quot; 1&gt;/dev/null 2&gt;&amp;1; then
+	$HOMEBREW_PREFIX/bin/python3 main.py my_ipinfo $1
+else
+    echo &apos;{
+  &quot;items&quot;: [
+    {
+      &quot;title&quot;: &quot;Python3 is required by this work flow&quot;,
+      &quot;subtitle&quot;: &quot;Hit enter to open the Python3 Installation Guide on GitHub&quot;,
+      &quot;valid&quot;: true,
+      &quot;arg&quot;: &quot;open,https://github.com/paulgit/alfred-ipinfo/wiki/Python3-Installation-Guide&quot;,
+      &quot;icon&quot;: {
+        &quot;path&quot;: &quot;./images/info.png&quot;
+      }
+    }
+  ]
+}&apos;
+fi
+</string>
 				<key>scriptargtype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>Lookup your IP address infomration</string>
+				<string></string>
 				<key>title</key>
-				<string>Lookup your IP address information</string>
+				<string>ipinfo: Lookup your IP address information</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -135,9 +217,106 @@ EOB</string>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>4DE38804-DD3A-4619-B68A-D9290EC54602</string>
+			<string>16B3F428-D0D9-45DB-833D-9A5B709EC3B3</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string>+</string>
+				<key>url</key>
+				<string>{var:split2}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>B7C68382-DB51-47C1-9579-573796A9030C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>54901FDD-C4F5-4671-97CD-7A6F8D06BD72</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:split1}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>open</string>
+						<key>outputlabel</key>
+						<string>open</string>
+						<key>uid</key>
+						<string>E321582E-0B25-4EE1-A3F5-155AB13C2188</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>copy</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>C991287B-0F95-4196-B6C7-C20B31E3CC11</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>delimiter</key>
+				<string>,</string>
+				<key>trimarguments</key>
+				<true/>
+				<key>variableprefix</key>
+				<string>split</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.split</string>
+			<key>uid</key>
+			<string>D1E9334D-A9DF-472A-9F0C-778FA94CB9D0</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -155,7 +334,7 @@ EOB</string>
 				<key>escaping</key>
 				<integer>63</integer>
 				<key>keyword</key>
-				<string>ipinfo</string>
+				<string>iplookup</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -167,41 +346,40 @@ EOB</string>
 				<key>runningsubtext</key>
 				<string>Gathering IP address information</string>
 				<key>script</key>
-				<string>if [[ $(uname -m) == 'arm64' ]]; then
-	JQ=bin/gojq_arm64
+				<string>UNAME_MACHINE=&quot;$(/usr/bin/uname -m)&quot;
+if [[ &quot;${UNAME_MACHINE}&quot; == &quot;arm64&quot; ]]
+then
+  HOMEBREW_PREFIX=&quot;/opt/homebrew&quot;
 else
-	JQ=bin/gojq_amd64
+  HOMEBREW_PREFIX=&quot;/usr/local&quot;
 fi
 
-IPINFO=$(curl -s -u $APIKEY: https://ipinfo.io/{query})
-EXTERNALIP=$(echo $IPINFO | $JQ -r .ip) 
-CITY=$(echo $IPINFO | $JQ -r .city)
-REGION=$(echo $IPINFO | $JQ -r .region)
-COUNTRY=$(echo $IPINFO | $JQ -r .country)
-ICON="flags/${COUNTRY}_64.png"
-cat&lt;&lt;EOB
-{"items": [
-	{
-		"uid": "ipinfo",
-		"type": "text",
-		"title": "$EXTERNALIP",
-		"subtitle": "$CITY, $REGION, $COUNTRY",
-		"arg": "$EXTERNALIP ($CITY, $REGION, $COUNTRY)",
-		"autocomplete": "ipinfo",
-		"icon": {
-			"path": "$ICON"
-		}
-	}
-]}
-EOB</string>
+if command -v &quot;$HOMEBREW_PREFIX/bin/python3&quot; 1&gt;/dev/null 2&gt;&amp;1; then
+	$HOMEBREW_PREFIX/bin/python3 main.py lookup_ipinfo $1
+else
+    echo &apos;{
+  &quot;items&quot;: [
+    {
+      &quot;title&quot;: &quot;Python3 is required by this work flow&quot;,
+      &quot;subtitle&quot;: &quot;Hit enter to open the Python3 Installation Guide on GitHub&quot;,
+      &quot;valid&quot;: true,
+      &quot;arg&quot;: &quot;open,https://github.com/paulgit/alfred-ipinfo/wiki/Python3-Installation-Guide&quot;,
+      &quot;icon&quot;: {
+        &quot;path&quot;: &quot;./images/info.png&quot;
+      }
+    }
+  ]
+}&apos;
+fi
+</string>
 				<key>scriptargtype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>Lookup IP address information</string>
+				<string></string>
 				<key>title</key>
-				<string>Lookup IP address information</string>
+				<string>iplookup: Lookup info for the specified IP address</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -229,52 +407,237 @@ EOB</string>
 			<key>type</key>
 			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
-			<string>0B87DA24-364C-466B-8276-C262B3C5A852</string>
+			<string>557EEBD1-608E-4869-BEEB-98B84EE9AF0C</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>keyword</key>
+				<string>iphelp</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>UNAME_MACHINE=&quot;$(/usr/bin/uname -m)&quot;
+if [[ &quot;${UNAME_MACHINE}&quot; == &quot;arm64&quot; ]]
+then
+  HOMEBREW_PREFIX=&quot;/opt/homebrew&quot;
+else
+  HOMEBREW_PREFIX=&quot;/usr/local&quot;
+fi
+
+if command -v &quot;$HOMEBREW_PREFIX/bin/python3&quot; 1&gt;/dev/null 2&gt;&amp;1; then
+	$HOMEBREW_PREFIX/bin/python3 main.py help_me
+else
+    echo &apos;{
+  &quot;items&quot;: [
+    {
+      &quot;title&quot;: &quot;Python3 is required by this work flow&quot;,
+      &quot;subtitle&quot;: &quot;Hit enter to open the Python3 Installation Guide on GitHub&quot;,
+      &quot;valid&quot;: true,
+      &quot;arg&quot;: &quot;open,https://github.com/paulgit/alfred-ipinfo/wiki/Python3-Installation-Guide&quot;,
+      &quot;icon&quot;: {
+        &quot;path&quot;: &quot;./images/info.png&quot;
+      }
+    }
+  ]
+}&apos;
+fi
+</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>iphelp: Show a list of example usage</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>2B8BAD2F-12C5-433D-9475-DD53165DCC04</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:split1}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>open</string>
+						<key>outputlabel</key>
+						<string>open</string>
+						<key>uid</key>
+						<string>E321582E-0B25-4EE1-A3F5-155AB13C2188</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>alfred</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>CCB9FCA1-8490-4BA8-91F6-8B2DCF60BE17</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>delimiter</key>
+				<string>,</string>
+				<key>trimarguments</key>
+				<true/>
+				<key>variableprefix</key>
+				<string>split</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.split</string>
+			<key>uid</key>
+			<string>C8C410D5-CB94-46C4-9998-8B1A644A86F2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>leftcursor</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.showalfred</string>
+			<key>uid</key>
+			<string>E8CB6FDB-42CE-436F-A642-6394C9670082</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
 	<string>This site or product includes IP2Location™ Country Flags which available from https://www.ip2location.com.</string>
 	<key>uidata</key>
 	<dict>
-		<key>0B87DA24-364C-466B-8276-C262B3C5A852</key>
+		<key>16B3F428-D0D9-45DB-833D-9A5B709EC3B3</key>
 		<dict>
 			<key>xpos</key>
-			<integer>190</integer>
+			<integer>200</integer>
 			<key>ypos</key>
-			<integer>150</integer>
+			<integer>10</integer>
+		</dict>
+		<key>2B8BAD2F-12C5-433D-9475-DD53165DCC04</key>
+		<dict>
+			<key>xpos</key>
+			<integer>200</integer>
+			<key>ypos</key>
+			<integer>285</integer>
 		</dict>
 		<key>431C45F3-D0D0-4E98-A914-ECD6F6A0FB87</key>
 		<dict>
 			<key>xpos</key>
-			<integer>10</integer>
+			<integer>200</integer>
 			<key>ypos</key>
 			<integer>150</integer>
 		</dict>
-		<key>486CA29F-D5A5-4FA1-A024-C6CBF1647D00</key>
-		<dict>
-			<key>xpos</key>
-			<integer>190</integer>
-			<key>ypos</key>
-			<integer>25</integer>
-		</dict>
-		<key>4DE38804-DD3A-4619-B68A-D9290EC54602</key>
+		<key>54901FDD-C4F5-4671-97CD-7A6F8D06BD72</key>
 		<dict>
 			<key>xpos</key>
 			<integer>10</integer>
 			<key>ypos</key>
-			<integer>25</integer>
+			<integer>10</integer>
+		</dict>
+		<key>557EEBD1-608E-4869-BEEB-98B84EE9AF0C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>840</integer>
+			<key>ypos</key>
+			<integer>175</integer>
+		</dict>
+		<key>B7C68382-DB51-47C1-9579-573796A9030C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>850</integer>
+			<key>ypos</key>
+			<integer>10</integer>
+		</dict>
+		<key>C8C410D5-CB94-46C4-9998-8B1A644A86F2</key>
+		<dict>
+			<key>xpos</key>
+			<integer>510</integer>
+			<key>ypos</key>
+			<integer>315</integer>
+		</dict>
+		<key>C991287B-0F95-4196-B6C7-C20B31E3CC11</key>
+		<dict>
+			<key>xpos</key>
+			<integer>650</integer>
+			<key>ypos</key>
+			<integer>85</integer>
+		</dict>
+		<key>CCB9FCA1-8490-4BA8-91F6-8B2DCF60BE17</key>
+		<dict>
+			<key>xpos</key>
+			<integer>655</integer>
+			<key>ypos</key>
+			<integer>305</integer>
+		</dict>
+		<key>D1E9334D-A9DF-472A-9F0C-778FA94CB9D0</key>
+		<dict>
+			<key>xpos</key>
+			<integer>510</integer>
+			<key>ypos</key>
+			<integer>95</integer>
+		</dict>
+		<key>E8CB6FDB-42CE-436F-A642-6394C9670082</key>
+		<dict>
+			<key>xpos</key>
+			<integer>840</integer>
+			<key>ypos</key>
+			<integer>325</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
 	<dict>
-		<key>APIKEY</key>
+		<key>APITOKEN</key>
 		<string></string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
-		<string>APIKEY</string>
+		<string>APITOKEN</string>
 	</array>
 	<key>version</key>
 	<string>1.0</string>
