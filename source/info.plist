@@ -4,8 +4,6 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.github.paulgit.alfredipinfo</string>
-	<key>category</key>
-	<string>Internet</string>
 	<key>connections</key>
 	<dict>
 		<key>16B3F428-D0D9-45DB-833D-9A5B709EC3B3</key>
@@ -150,80 +148,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>ipinfo</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Fetching your IP address information</string>
-				<key>script</key>
-				<string>UNAME_MACHINE=&quot;$(/usr/bin/uname -m)&quot;
-if [[ &quot;${UNAME_MACHINE}&quot; == &quot;arm64&quot; ]]
-then
-  HOMEBREW_PREFIX=&quot;/opt/homebrew&quot;
-else
-  HOMEBREW_PREFIX=&quot;/usr/local&quot;
-fi
-
-if command -v &quot;$HOMEBREW_PREFIX/bin/python3&quot; 1&gt;/dev/null 2&gt;&amp;1; then
-	$HOMEBREW_PREFIX/bin/python3 main.py my_ipinfo $1
-else
-    echo &apos;{
-  &quot;items&quot;: [
-    {
-      &quot;title&quot;: &quot;Python3 is required by this work flow&quot;,
-      &quot;subtitle&quot;: &quot;Hit enter to open the Python3 Installation Guide on GitHub&quot;,
-      &quot;valid&quot;: true,
-      &quot;arg&quot;: &quot;open,https://github.com/paulgit/alfred-ipinfo/wiki/Python3-Installation-Guide&quot;,
-      &quot;icon&quot;: {
-        &quot;path&quot;: &quot;./images/info.png&quot;
-      }
-    }
-  ]
-}&apos;
-fi
-</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>ipinfo: Lookup your IP address information</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>16B3F428-D0D9-45DB-833D-9A5B709EC3B3</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>browser</key>
 				<string></string>
 				<key>spaces</key>
@@ -243,6 +167,80 @@ fi
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>ipinfo</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Fetching your IP address information</string>
+				<key>script</key>
+				<string>UNAME_MACHINE="$(/usr/bin/uname -m)"
+if [[ "${UNAME_MACHINE}" == "arm64" ]]
+then
+  HOMEBREW_PREFIX="/opt/homebrew"
+else
+  HOMEBREW_PREFIX="/usr/local"
+fi
+
+if command -v "$HOMEBREW_PREFIX/bin/python3" 1&gt;/dev/null 2&gt;&amp;1; then
+	$HOMEBREW_PREFIX/bin/python3 main.py my_ipinfo $1
+else
+    echo '{
+  "items": [
+    {
+      "title": "Python3 is required by this work flow",
+      "subtitle": "Hit enter to open the Python3 Installation Guide on GitHub",
+      "valid": true,
+      "arg": "open,https://github.com/paulgit/alfred-ipinfo/wiki/Python3-Installation-Guide",
+      "icon": {
+        "path": "./images/info.png"
+      }
+    }
+  ]
+}'
+fi
+</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>ipinfo: Lookup your IP address information</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>16B3F428-D0D9-45DB-833D-9A5B709EC3B3</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -255,8 +253,6 @@ fi
 				<integer>0</integer>
 				<key>hotmod</key>
 				<integer>0</integer>
-				<key>hotstring</key>
-				<string></string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -346,30 +342,30 @@ fi
 				<key>runningsubtext</key>
 				<string>Gathering IP address information</string>
 				<key>script</key>
-				<string>UNAME_MACHINE=&quot;$(/usr/bin/uname -m)&quot;
-if [[ &quot;${UNAME_MACHINE}&quot; == &quot;arm64&quot; ]]
+				<string>UNAME_MACHINE="$(/usr/bin/uname -m)"
+if [[ "${UNAME_MACHINE}" == "arm64" ]]
 then
-  HOMEBREW_PREFIX=&quot;/opt/homebrew&quot;
+  HOMEBREW_PREFIX="/opt/homebrew"
 else
-  HOMEBREW_PREFIX=&quot;/usr/local&quot;
+  HOMEBREW_PREFIX="/usr/local"
 fi
 
-if command -v &quot;$HOMEBREW_PREFIX/bin/python3&quot; 1&gt;/dev/null 2&gt;&amp;1; then
+if command -v "$HOMEBREW_PREFIX/bin/python3" 1&gt;/dev/null 2&gt;&amp;1; then
 	$HOMEBREW_PREFIX/bin/python3 main.py lookup_ipinfo $1
 else
-    echo &apos;{
-  &quot;items&quot;: [
+    echo '{
+  "items": [
     {
-      &quot;title&quot;: &quot;Python3 is required by this work flow&quot;,
-      &quot;subtitle&quot;: &quot;Hit enter to open the Python3 Installation Guide on GitHub&quot;,
-      &quot;valid&quot;: true,
-      &quot;arg&quot;: &quot;open,https://github.com/paulgit/alfred-ipinfo/wiki/Python3-Installation-Guide&quot;,
-      &quot;icon&quot;: {
-        &quot;path&quot;: &quot;./images/info.png&quot;
+      "title": "Python3 is required by this work flow",
+      "subtitle": "Hit enter to open the Python3 Installation Guide on GitHub",
+      "valid": true,
+      "arg": "open,https://github.com/paulgit/alfred-ipinfo/wiki/Python3-Installation-Guide",
+      "icon": {
+        "path": "./images/info.png"
       }
     }
   ]
-}&apos;
+}'
 fi
 </string>
 				<key>scriptargtype</key>
@@ -439,30 +435,30 @@ fi
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>UNAME_MACHINE=&quot;$(/usr/bin/uname -m)&quot;
-if [[ &quot;${UNAME_MACHINE}&quot; == &quot;arm64&quot; ]]
+				<string>UNAME_MACHINE="$(/usr/bin/uname -m)"
+if [[ "${UNAME_MACHINE}" == "arm64" ]]
 then
-  HOMEBREW_PREFIX=&quot;/opt/homebrew&quot;
+  HOMEBREW_PREFIX="/opt/homebrew"
 else
-  HOMEBREW_PREFIX=&quot;/usr/local&quot;
+  HOMEBREW_PREFIX="/usr/local"
 fi
 
-if command -v &quot;$HOMEBREW_PREFIX/bin/python3&quot; 1&gt;/dev/null 2&gt;&amp;1; then
+if command -v "$HOMEBREW_PREFIX/bin/python3" 1&gt;/dev/null 2&gt;&amp;1; then
 	$HOMEBREW_PREFIX/bin/python3 main.py help_me
 else
-    echo &apos;{
-  &quot;items&quot;: [
+    echo '{
+  "items": [
     {
-      &quot;title&quot;: &quot;Python3 is required by this work flow&quot;,
-      &quot;subtitle&quot;: &quot;Hit enter to open the Python3 Installation Guide on GitHub&quot;,
-      &quot;valid&quot;: true,
-      &quot;arg&quot;: &quot;open,https://github.com/paulgit/alfred-ipinfo/wiki/Python3-Installation-Guide&quot;,
-      &quot;icon&quot;: {
-        &quot;path&quot;: &quot;./images/info.png&quot;
+      "title": "Python3 is required by this work flow",
+      "subtitle": "Hit enter to open the Python3 Installation Guide on GitHub",
+      "valid": true,
+      "arg": "open,https://github.com/paulgit/alfred-ipinfo/wiki/Python3-Installation-Guide",
+      "icon": {
+        "path": "./images/info.png"
       }
     }
   ]
-}&apos;
+}'
 fi
 </string>
 				<key>scriptargtype</key>
