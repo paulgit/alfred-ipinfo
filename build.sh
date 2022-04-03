@@ -9,11 +9,9 @@ WORKFLOW_FILE="$BUILD_FOLDER/${WORKFLOW_NAME}.alfredworkflow"
 # Start building the alfred workflow
 echo "Building $WORKFLOW_NAME"
 
-# Create build folder if it doesn't already exit
-mkdir -p "$BUILD_FOLDER" > /dev/null
-
 # Empty build folder
-rm -f "$BUILD_FOLDER/*"
+rm -rf "$BUILD_FOLDER/"
+mkdir -p "$BUILD_FOLDER" > /dev/null
 cd "$SOURCE_FOLDER"
 zip -rq "$WORKFLOW_FILE" *
 
