@@ -6,6 +6,7 @@ from .exceptions import IPInfoError, ConfigError
 from .utils import (
     init_workflow,
     get_ipdata,
+    isocode_to_country,
 )
 
 __all__ = [
@@ -35,11 +36,11 @@ def fetch_ipinfo(workflow,ipaddress=""):
         if len(ipdata) > 0:
             argvalue=ipdata["ip"]
             if ip_address:
-                argvalue+=" (" + ipdata["city"] + ", " + ipdata["region"] + ", " + ipdata["country"] + " • " + ipdata["org"] + ")"
+                argvalue+=" (" + ipdata["city"] + ", " + ipdata["region"] + ", " + isocode_to_country(ipdata["country"]) + " • " + ipdata["org"] + ")"
 
             workflow.add_item(
                 title=ipdata["ip"],
-                subtitle=ipdata["city"] + ", " + ipdata["region"] + ", " + ipdata["country"] + " • " + ipdata["org"],
+                subtitle=ipdata["city"] + ", " + ipdata["region"] + ", " + isocode_to_country(ipdata["country"]) + " • " + ipdata["org"],
                 valid=True,
                 arg=argvalue,
                 icon=str.format("./images/{}_64.png",ipdata["country"].lower())
