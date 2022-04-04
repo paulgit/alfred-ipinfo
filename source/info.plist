@@ -545,7 +545,10 @@ fi
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>This site or product includes IP2Location™ Country Flags which available from https://www.ip2location.com.</string>
+	<string>ipinfo is an Alfred workflow for fetching information about an IP address. It achieves this by using the ipinfo.io IP Geolocation API which is free to register for and is free to use for 50,000 lookups per month.
+Credits
+=======
+This site or product includes IP2Location™ Country Flags which available from https://www.ip2location.com.</string>
 	<key>uidata</key>
 	<dict>
 		<key>16B3F428-D0D9-45DB-833D-9A5B709EC3B3</key>
